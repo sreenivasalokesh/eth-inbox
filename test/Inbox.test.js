@@ -22,7 +22,6 @@ describe("inbox test", () => {
 
   it("test init message", async () => {
     const message = await inbox.methods.message().call();
-    console.log(message);
     assert.equal("who are you", message);
   });
 
