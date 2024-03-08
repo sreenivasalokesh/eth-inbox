@@ -19,12 +19,12 @@ describe("inbox test", () => {
     assert(true);
   });
 
-  it("test init message", async () => {
+  it("test init message operation", async () => {
     const message = await inbox.methods.message().call();
     assert.equal("who are you", message);
   });
 
-  it("test set message", async () => {
+  it("test set message operation", async () => {
     await inbox.methods
       .setMessage("bye")
       .send({ from: accounts[0], gas: "1000000", gasPrice: 100000 });
