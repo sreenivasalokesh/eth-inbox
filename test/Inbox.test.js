@@ -16,7 +16,6 @@ beforeEach(async () => {
 
 describe("inbox test", () => {
   it("test deploy", () => {
-    console.log(inbox.options.address);
     assert(true);
   });
 
