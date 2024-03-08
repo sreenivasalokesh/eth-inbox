@@ -31,7 +31,6 @@ describe("inbox test", () => {
       .setMessage("bye")
       .send({ from: accounts[0], gas: "1000000", gasPrice: 100000 });
     const message = await inbox.methods.message().call();
-    console.log(message);
     assert.equal("bye", message);
   });
 });
